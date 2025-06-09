@@ -23,25 +23,6 @@ public static boolean verifica(int indices[], int indice, int iterador){
     }
     return false;
 }
-
-public static boolean ehPrimo(int numero) {
-    if (numero <= 1) {
-        return false;
-    }
-    if (numero == 2) {
-        return true;
-    }
-    if (numero % 2 == 0) {
-        return false;
-    }
-    int raiz = (int) Math.sqrt(numero);
-    for (int i = 3; i <= raiz; i += 2) {
-        if (numero % i == 0) {
-            return false;
-        }
-    }
-    return true;
-}
     public static void main(String[] args) {
         int numeros[] = new int[1000];
         Random random = new Random();
